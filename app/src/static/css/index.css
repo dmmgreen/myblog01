@@ -1,0 +1,1577 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pull-right {
+    float: right;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    height: 56px;
+    line-height: 56px;
+    font-size: 15px;
+    color: #969696;
+}
+
+header a.logo {
+    color: #ea6f5a;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 30px;
+    float: left;
+}
+
+header .login {
+    display: inline-block;
+    padding: 0 10px;
+    float: right;
+}
+
+header .register {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 10px 0 0 20px;
+    border: 1px solid #ea6f5a;
+    line-height: 34px;
+    float: right;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #ea6f5a;
+}
+
+header .add-article {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 10px 0 0 20px;
+    background-color: #ea6f5a;
+    line-height: 34px;
+    float: right;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+header .user {
+    float: right;
+    height: 100%;
+    position: relative;
+}
+
+header .user .avator {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 8px 28px 8px 20px;
+    display: block;
+    cursor: pointer;
+}
+
+header .user .dropdown-menu {
+    left: auto;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .1));
+    -webkit-filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .1));
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+header .user:hover .dropdown-menu {
+    display: block;
+}
+
+header .user .dropdown-menu a {
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 30px;
+    display: block;
+    clear: both;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap;
+}
+
+.note-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.note-list li {
+    position: relative;
+    width: 100%;
+    margin: 0 0 17px;
+    padding: 0 2px 17px 0;
+    border-bottom: 1px solid #f0f0f0;
+    word-wrap: break-word
+}
+
+.note-list li.have-img {
+    min-height: 140px
+}
+
+.note-list .have-img .wrap-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -68px;
+    right: 0;
+    width: 150px;
+    height: 120px
+}
+
+.note-list .have-img .wrap-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0
+}
+
+.note-list .have-img > div {
+    padding-right: 160px
+}
+
+.note-list .content .cancel {
+    display: none
+}
+
+.note-list .content:hover .cancel {
+    display: inline
+}
+
+.note-list .author {
+    margin-bottom: 14px;
+    font-size: 13px
+}
+
+.note-list .author-restyle {
+    margin-bottom: 0
+}
+
+.note-list .author .avatar {
+    margin: 0 5px 0 0
+}
+
+.note-list .author .avatar, .note-list .author .name {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.note-list .author .name span {
+    display: inline-block;
+    padding-left: 3px;
+    color: #969696
+}
+
+.note-list .author a {
+    color: #333
+}
+
+.note-list .author a:hover {
+    color: #2f2f2f
+}
+
+.note-list .author .time {
+    color: #969696
+}
+
+.note-list .title {
+    margin: -7px 0 4px;
+    display: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5
+}
+
+.note-list .title:hover {
+    text-decoration: underline
+}
+
+.note-list .title:visited {
+    color: #969696
+}
+
+.note-list .title:empty:before {
+    content: "\65E0\9898"
+}
+
+.note-list .origin-author {
+    display: inline;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #969696
+}
+
+.note-list .origin-author a {
+    margin-right: 5px;
+    color: #3194d0 !important
+}
+
+.note-list .origin-author a:hover {
+    color: #3194d0 !important
+}
+
+.note-list .comment {
+    font-size: 15px;
+    line-height: 1.7
+}
+
+.note-list .comment a, .note-list a.maleskine-author {
+    color: #3194d0
+}
+
+.note-list blockquote {
+    margin-bottom: 0;
+    color: #969696;
+    border-left: 3px solid #d9d9d9
+}
+
+.note-list blockquote .single-line {
+    margin: 0
+}
+
+.note-list blockquote .title {
+    margin: 0 0 4px;
+    font-size: 15px
+}
+
+.note-list blockquote .abstract {
+    margin: 0 0 4px
+}
+
+.note-list .abstract {
+    margin: 0 0 8px;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.note-list .collection-tag {
+    padding: 2px 6px;
+    color: #ea6f5a !important;
+    border: 1px solid rgba(236, 97, 73, .7);
+    border-radius: 3px
+}
+
+.note-list .collection-tag, .note-list .collection-tag:hover {
+    transition: .1s ease-in;
+    -webkit-transition: .1s ease-in;
+    -moz-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+    -ms-transition: .1s ease-in
+}
+
+.note-list .collection-tag:hover {
+    color: #ec6149 !important;
+    background-color: rgba(236, 97, 73, .05);
+    border-color: #ec6149
+}
+
+.note-list .follow-detail {
+    padding: 20px;
+    background-color: hsla(0, 0%, 71%, .1);
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    font-size: 12px
+}
+
+.note-list .follow-detail .avatar, .note-list .follow-detail .avatar-collection {
+    float: left;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px
+}
+
+.note-list .follow-detail .info .title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400
+}
+
+.note-list .follow-detail .info .title:visited {
+    color: inherit
+}
+
+.note-list .follow-detail .info p {
+    margin-bottom: 0;
+    color: #969696
+}
+
+.note-list .follow-detail .creater, .note-list .follow-detail .creater:hover {
+    color: #3194d0
+}
+
+.note-list .follow-detail .btn {
+    float: right;
+    margin-top: 4px;
+    padding: 8px 0;
+    width: 100px
+}
+
+.note-list .follow-detail .signature {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    color: #969696;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.note-list .meta {
+    padding-right: 0 !important;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.note-list .meta a {
+    margin-right: 10px;
+    color: #b4b4b4
+}
+
+.note-list .meta a, .note-list .meta a:hover {
+    transition: .1s ease-in;
+    -webkit-transition: .1s ease-in;
+    -moz-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+    -ms-transition: .1s ease-in
+}
+
+.note-list .meta a:hover {
+    color: #787878
+}
+
+.note-list .meta span {
+    margin-right: 10px;
+    color: #b4b4b4
+}
+
+.note-list .push-action {
+    margin-top: 10px
+}
+
+.note-list .btn-gray, .note-list .hollow {
+    margin: 0 10px;
+    padding: 4px 12px;
+    font-size: 12px
+}
+
+.note-list .push-status, .note-list .push-time {
+    font-size: 12px;
+    color: #969696
+}
+
+.note-list .push-status {
+    margin-right: 5px;
+    font-weight: 700
+}
+
+.note-list .push-remove {
+    font-weight: 400;
+    color: #ea6f5a
+}
+
+.addTitle {
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+}
+
+.addTitle:focus {
+    outline: none;
+}
+
+.add-article-btn {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 10px 0 0 20px;
+    background-color: #ea6f5a;
+    line-height: 34px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.note {
+    position: relative;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.note .post {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    width: 620px
+}
+
+.note .post .article .title {
+    word-break: break-word;
+    margin: 20px 0 0;
+    font-family: -apple-system, SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3
+}
+
+.note .post .article .author {
+    margin: 30px 0 40px
+}
+
+.note .post .article .author .avatar {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.note .post .article .author .info {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 8px
+}
+
+.note .post .article .author .tag {
+    padding: 1px 2px;
+    font-size: 12px;
+    color: #ea6f5a;
+    border: 1px solid #ea6f5a;
+    border-radius: 3px
+}
+
+.note .post .article .author .name {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 16px;
+    vertical-align: middle
+}
+
+.note .post .article .follow, .note .post .article .follow-cancel, .note .post .article .follow-each, .note .post .article .following {
+    padding: 0 7px 0 5px;
+    font-size: 12px
+}
+
+.note .post .article .author .meta {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #969696
+}
+
+.note .post .article .author .meta span {
+    padding-right: 5px
+}
+
+.note .post .article .author .edit {
+    float: right;
+    margin-top: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    color: #9b9b9b;
+    line-height: 30px;
+    border-radius: 50px
+}
+
+.note .post .article .author .edit:hover {
+    background-color: hsla(0, 0%, 71%, .1)
+}
+
+.note .post .article .show-content {
+    color: #2f2f2f;
+    word-break: break-word !important;
+    word-break: break-all;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7
+}
+
+.note .post .article .show-content p {
+    margin: 0 0 25px
+}
+
+.note .post .article .show-content blockquote h1:last-child, .note .post .article .show-content blockquote h2:last-child, .note .post .article .show-content blockquote h3:last-child, .note .post .article .show-content blockquote h4:last-child, .note .post .article .show-content blockquote h5:last-child, .note .post .article .show-content blockquote h6:last-child, .note .post .article .show-content blockquote li:last-child, .note .post .article .show-content blockquote ol:last-child, .note .post .article .show-content blockquote p:last-child, .note .post .article .show-content blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+.note .post .article .show-content .video-package .video-description p {
+    margin: 0
+}
+
+.note .post .article .show-content li p {
+    overflow: visible
+}
+
+.note .post .article .show-content a {
+    color: #3194d0
+}
+
+.note .post .article .show-content a:hover {
+    color: #3194d0;
+    text-decoration: underline
+}
+
+.note .post .article .show-content a.active, .note .post .article .show-content a:active, .note .post .article .show-content a:focus {
+    color: #3194d0
+}
+
+.note .post .article .show-content a.disabled, .note .post .article .show-content a.disabled.active, .note .post .article .show-content a.disabled:active, .note .post .article .show-content a.disabled:focus, .note .post .article .show-content a.disabled:hover, .note .post .article .show-content a[disabled], .note .post .article .show-content a[disabled].active, .note .post .article .show-content a[disabled]:active, .note .post .article .show-content a[disabled]:focus, .note .post .article .show-content a[disabled]:hover {
+    cursor: not-allowed;
+    color: #f5f5f5
+}
+
+.note .post .article .show-content ol, .note .post .article .show-content p, .note .post .article .show-content ul {
+    word-break: break-word !important;
+    word-break: break-all
+}
+
+.note .post .article .show-content hr {
+    margin: 0 0 20px;
+    border-top: 1px solid #ddd
+}
+
+.note .post .article .show-content h1, .note .post .article .show-content h2, .note .post .article .show-content h3, .note .post .article .show-content h4, .note .post .article .show-content h5, .note .post .article .show-content h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #2f2f2f;
+    line-height: 1.7;
+    text-rendering: optimizelegibility
+}
+
+.note .post .article .show-content h1 {
+    font-size: 26px
+}
+
+.note .post .article .show-content h2 {
+    font-size: 24px
+}
+
+.note .post .article .show-content h3 {
+    font-size: 22px
+}
+
+.note .post .article .show-content h4 {
+    font-size: 20px
+}
+
+.note .post .article .show-content h5 {
+    font-size: 18px
+}
+
+.note .post .article .show-content h6 {
+    font-size: 16px
+}
+
+.note .post .article .show-content img {
+    max-width: 100%
+}
+
+.note .post .article .show-content blockquote {
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f7f7f7;
+    border-left: 6px solid #b4b4b4;
+    word-break: break-word !important;
+    word-break: break-all;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px
+}
+
+.note .post .article .show-content blockquote p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7
+}
+
+.note .post .article .show-content blockquote .image-package {
+    width: auto;
+    margin-left: 0
+}
+
+.note .post .article .show-content ol, .note .post .article .show-content ul {
+    padding: 0;
+    margin-left: 22px;
+    margin-bottom: 20px
+}
+
+.note .post .article .show-content ol li, .note .post .article .show-content ul li {
+    margin-bottom: 10px;
+    line-height: 30px
+}
+
+.note .post .article .show-content ol li ol, .note .post .article .show-content ol li ul, .note .post .article .show-content ul li ol, .note .post .article .show-content ul li ul {
+    margin-top: 15px
+}
+
+.note .post .article .show-content ol .image-package, .note .post .article .show-content ul .image-package {
+    width: auto !important;
+    margin-left: 0 !important
+}
+
+.note .post .article .show-content pre {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 13px;
+    word-wrap: normal;
+    word-break: break-word !important;
+    word-break: break-all;
+    white-space: pre;
+    overflow: auto;
+    border-radius: 0
+}
+
+.note .post .article .show-content pre code {
+    padding: 0;
+    background-color: transparent;
+    white-space: pre
+}
+
+.note .post .article .show-content code {
+    padding: 2px 4px;
+    background-color: #f6f6f6;
+    border: none;
+    color: #657b83;
+    font-size: 12px;
+    white-space: pre-wrap
+}
+
+.note .post .article .show-content table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-left: none;
+    word-break: normal
+}
+
+.note .post .article .show-content table tr:nth-of-type(2n) {
+    background-color: hsla(0, 0%, 71%, .1)
+}
+
+.note .post .article .show-content table thead th {
+    vertical-align: middle;
+    text-align: inherit
+}
+
+.note .post .article .show-content table td, .note .post .article .show-content table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    vertical-align: middle
+}
+
+.note .post .article .show-content table th {
+    font-weight: 700
+}
+
+.note .post .article .show-content table .image-package {
+    width: auto;
+    margin-left: 0
+}
+
+.note .post .article .show-content .image-package {
+    padding-bottom: 25px;
+    width: 700px;
+    margin-left: -40px;
+    text-align: center
+}
+
+.note .post .article .show-content .image-package img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    cursor: -webkit-zoom-in;
+    transition: all .25s ease-in-out
+}
+
+.note .post .article .show-content .image-package .image-caption {
+    min-width: 20%;
+    max-width: 80%;
+    min-height: 22px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 14px;
+    color: #969696;
+    line-height: 1.7
+}
+
+.note .post .article .show-content .image-package .image-caption:empty {
+    display: none
+}
+
+.note .post .article .show-content .video-package {
+    position: relative;
+    margin: -20px auto 20px;
+    text-align: center
+}
+
+.note .post .article .show-content .video-package .video-placeholder-area {
+    position: relative;
+    display: inline-block;
+    height: 110px;
+    padding: 10px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    background-color: hsla(0, 0%, 71%, .1);
+    text-align: left;
+    cursor: pointer
+}
+
+.note .post .article .show-content .video-package .video-placeholder-area:after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(//cdn2.jianshu.io/assets/common/play-btn-c4bc06b9dfe063495b6b8277b14bc5c3.png);
+    background-position: 30px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    transition: all .1s linear
+}
+
+.note .post .article .show-content .video-package .video-placeholder-area:hover:after {
+    background-color: transparent
+}
+
+.note .post .article .show-content .video-package .video-placeholder-area .video-cover {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: block;
+    width: 110px;
+    height: 110px;
+    opacity: .8;
+    transition: opacity .1s linear
+}
+
+.note .post .article .show-content .video-package .video-description {
+    min-width: 20%;
+    min-height: 22px;
+    display: none;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 13px;
+    color: #999;
+    line-height: 1.7
+}
+
+.note .post .article .show-content .video-package .video-description:empty {
+    display: none
+}
+
+.note .post .article .show-content .video-package .video-close-button, .note .post .article .show-content .video-package .video-provider-button {
+    text-align: left;
+    font-size: 14px;
+    padding: 0;
+    line-height: 14px;
+    cursor: pointer;
+    transition: opacity .1s linear
+}
+
+.note .post .article .show-content .video-package .video-close-button i, .note .post .article .show-content .video-package .video-provider-button i {
+    position: relative;
+    top: 1px
+}
+
+.note .post .article .show-content .video-package .video-provider-button {
+    float: right
+}
+
+.note .post .article .show-foot {
+    margin: 40px 0 30px
+}
+
+.note .post .article .show-foot .notebook {
+    font-size: 12px;
+    color: #9b9b9b
+}
+
+.note .post .article .show-foot .notebook i {
+    margin-right: 2px;
+    font-size: 15px
+}
+
+.note .post .article .show-foot .copyright {
+    float: right;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #9b9b9b
+}
+
+.note .post .article .show-foot .modal-wrap {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 1.7
+}
+
+.note .post .article .show-foot .modal-wrap > a {
+    color: #9b9b9b
+}
+
+.note .post .follow-detail {
+    padding: 20px;
+    background-color: hsla(0, 0%, 71%, .1);
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    font-size: 12px
+}
+
+.note .post .follow-detail li {
+    line-height: 20px
+}
+
+.note .post .follow-detail .avatar {
+    float: left;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px
+}
+
+.note .post .follow-detail .info {
+    min-height: 47px
+}
+
+.note .post .follow-detail .info .title {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    vertical-align: middle
+}
+
+.note .post .follow-detail .ic-man, .note .post .follow-detail .ic-woman {
+    font-size: 15px;
+    vertical-align: middle
+}
+
+.note .post .follow-detail .tag {
+    padding: 1px 2px;
+    font-size: 12px;
+    color: #ea6f5a;
+    border: 1px solid #ea6f5a;
+    border-radius: 3px
+}
+
+.note .post .follow-detail .info p {
+    margin-bottom: 0;
+    color: #969696
+}
+
+.note .post .follow-detail .btn {
+    float: right;
+    margin-top: 4px;
+    padding: 8px 0;
+    width: 100px;
+    font-size: 16px
+}
+
+.note .post .follow-detail .signature {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    color: #969696;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.note .post .dividing-line, .note .post .support-author {
+    border-bottom: 1px solid #f0f0f0
+}
+
+.note .post .support-author {
+    padding: 30px 0 20px;
+    text-align: center;
+    clear: both
+}
+
+.note .post .support-author p {
+    padding: 0 30px;
+    margin-bottom: 20px;
+    min-height: 24px;
+    font-size: 17px
+}
+
+.note .post .support-author .btn-pay {
+    margin-bottom: 20px;
+    padding: 8px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ea6f5a;
+    border-radius: 20px
+}
+
+.note .post .support-author .btn-pay:hover {
+    background-color: #ec6149
+}
+
+.note .post .support-author .supporter {
+    height: 50px
+}
+
+.note .post .support-author .supporter .support-list {
+    list-style: none;
+    display: inline-block
+}
+
+.note .post .support-author .supporter .support-list li {
+    margin: 0 -5px;
+    display: inline-block
+}
+
+.note .post .support-author .supporter .support-list .avatar {
+    width: 40px;
+    height: 40px
+}
+
+.note .post .support-author .supporter .support-list .avatar img {
+    border: 3px solid #fff
+}
+
+.note .post .support-author .supporter .modal-wrap {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #646464;
+    vertical-align: -2px;
+    cursor: pointer;
+    display: inline-block
+}
+
+.note .post .support-author .supporter span {
+    cursor: pointer;
+    padding-left: 5px;
+    margin-right: -10px;
+    font-size: 13px
+}
+
+.note .post .meta-bottom {
+    margin-top: 30px
+}
+
+.note .post .meta-bottom .like {
+    display: inline-block
+}
+
+.note .post .meta-bottom .like-group {
+    padding: 13px 0 15px;
+    font-size: 0;
+    border: 1px solid #ea6f5a;
+    border-radius: 40px
+}
+
+.note .post .meta-bottom .like-group:hover {
+    background-color: rgba(236, 97, 73, .05)
+}
+
+.note .post .meta-bottom .like-group .btn-like {
+    font-size: 19px;
+    display: inline-block
+}
+
+.note .post .meta-bottom .like-group .btn-like a {
+    color: #ea6f5a;
+    padding: 18px 15px 18px 30px
+}
+
+.note .post .meta-bottom .like-group .btn-like i {
+    margin-right: 5px;
+    font-size: 21px
+}
+
+.note .post .meta-bottom .like-group .modal-wrap {
+    font-size: 18px;
+    border-left: 1px solid rgba(236, 97, 73, .4);
+    display: inline-block
+}
+
+.note .post .meta-bottom .like-group .modal-wrap a {
+    color: #ea6f5a;
+    padding: 18px 30px 18px 17px
+}
+
+.note .post .meta-bottom .like-group.active {
+    background-color: #ea6f5a
+}
+
+.note .post .meta-bottom .like-group.active .btn-like > a {
+    color: #fff
+}
+
+.note .post .meta-bottom .like-group.active .modal-wrap {
+    border-left: 1px solid #fff
+}
+
+.note .post .meta-bottom .like-group.active .modal-wrap > a {
+    color: #fff
+}
+
+.note .post .meta-bottom .share-group {
+    float: right;
+    margin-top: 6px
+}
+
+.note .post .meta-bottom .share-group .share-circle {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.note .post .meta-bottom .share-group .share-circle i {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 2
+}
+
+.note .post .meta-bottom .share-group .share-circle .ic-wechat {
+    color: #00bb29
+}
+
+.note .post .meta-bottom .share-group .share-circle .ic-weibo {
+    color: #e05244
+}
+
+.note .post .meta-bottom .share-group .share-circle .ic-picture {
+    color: #9b9b9b
+}
+
+.note .post .meta-bottom .share-group .share-circle:hover {
+    background-color: hsla(0, 0%, 71%, .1)
+}
+
+.note .post .meta-bottom .share-group .more-share {
+    width: auto;
+    padding: 4px 18px;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 40px;
+    border-radius: 50px
+}
+
+.note .post .meta-bottom .share-group .popover-content {
+    padding: 0
+}
+
+.note .post .meta-bottom .share-group .share-list {
+    margin: 0;
+    list-style: none
+}
+
+.note .post .meta-bottom .share-group .share-list li {
+    line-height: 20px
+}
+
+.note .post .meta-bottom .share-group .share-list a {
+    padding: 5px 10px;
+    display: block
+}
+
+.note .post .meta-bottom .share-group .share-list a:hover {
+    background-color: #f0f0f0
+}
+
+.note .post .meta-bottom .share-group .share-list i {
+    margin-right: 10px
+}
+
+.note .post .meta-bottom .share-group .share-list span {
+    vertical-align: middle
+}
+
+.note .post .comment-list {
+    padding-top: 100px
+}
+
+.note .post .comment-list .new-comment {
+    position: relative;
+    margin-left: 48px
+}
+
+.note .post .comment-list .new-comment .avatar {
+    position: absolute;
+    left: -48px
+}
+
+.note .post .comment-list .new-comment .sign-container, .note .post .comment-list .new-comment textarea {
+    padding: 10px 15px;
+    width: 100%;
+    height: 80px;
+    font-size: 13px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: hsla(0, 0%, 71%, .1);
+    resize: none;
+    display: inline-block;
+    vertical-align: top;
+    outline-style: none
+}
+
+.note .post .comment-list .new-comment .sign-container {
+    text-align: center
+}
+
+.note .post .comment-list .new-comment .btn-sign {
+    width: 78px;
+    margin: 11px 10px 0 0;
+    padding: 7px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff !important;
+    background-color: #3194d0;
+    outline: none
+}
+
+.note .post .comment-list .new-comment .btn-sign:hover {
+    background-color: #187cb7
+}
+
+.note .post .comment-list .new-comment .write-function-block {
+    height: 50px
+}
+
+.note .post .comment-list .new-comment .write-function-block .emoji-modal {
+    left: -48px
+}
+
+.note .post .comment-list .new-comment .emoji {
+    float: left;
+    margin-top: 14px
+}
+
+.note .post .comment-list .new-comment .emoji i {
+    font-size: 20px;
+    color: #969696
+}
+
+.note .post .comment-list .new-comment .emoji i:hover {
+    color: #2f2f2f
+}
+
+.note .post .comment-list .new-comment .emoji-modal:after, .note .post .comment-list .new-comment .emoji-modal:before {
+    left: 48px
+}
+
+.note .post .comment-list .new-comment .hint {
+    float: left;
+    margin: 20px 0 0 20px;
+    font-size: 13px;
+    color: #969696
+}
+
+.note .post .comment-list .new-comment .btn-send {
+    float: right;
+    width: 78px;
+    margin: 10px 0;
+    padding: 8px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    color: #fff !important;
+    background-color: #42c02e;
+    cursor: pointer;
+    outline: none;
+    display: block
+}
+
+.note .post .comment-list .new-comment .btn-send:hover {
+    background-color: #3db922
+}
+
+.note .post .comment-list .new-comment .cancel {
+    float: right;
+    margin: 18px 30px 0 0;
+    font-size: 16px;
+    color: #969696;
+    cursor: pointer;
+}
+
+.note .post .comment-list .new-comment .cancel:hover {
+    color: #2f2f2f
+}
+
+.note .post .comment-list .new-comment span {
+    font-size: 14px;
+    vertical-align: -7px
+}
+
+.note .post .comment-list .top {
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .top span {
+    vertical-align: middle
+}
+
+.note .post .comment-list .comment {
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .comment:last-child {
+    border-bottom: none
+}
+
+.note .post .comment-list .comment p {
+    font-size: 16px
+}
+
+.note .post .comment-list .author {
+    margin-bottom: 15px
+}
+
+.note .post .comment-list .avatar {
+    margin-right: 5px;
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.note .post .comment-list .comment-wrap .comment-delete, .note .post .comment-list .comment-wrap .report {
+    float: right;
+    margin: 12px 0 0 10px;
+    display: none
+}
+
+.note .post .comment-list .comment-wrap:hover .comment-delete, .note .post .comment-list .comment-wrap:hover .report {
+    display: inherit
+}
+
+.note .post .comment-list p {
+    margin: 10px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    word-break: break-word !important;
+    word-break: break-all
+}
+
+.note .post .comment-list p a, .note .post .comment-list p a:hover {
+    color: #3194d0
+}
+
+.note .post .comment-list .info {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.note .post .comment-list .name {
+    font-size: 15px;
+    color: #333
+}
+
+.note .post .comment-list .name:hover {
+    color: #2f2f2f
+}
+
+.note .post .comment-list .author-tag {
+    margin-left: 2px;
+    padding: 0 2px;
+    font-size: 12px;
+    color: #ea6f5a;
+    border: 1px solid #ea6f5a;
+    border-radius: 3px;
+    vertical-align: middle
+}
+
+.note .post .comment-list .meta {
+    font-size: 12px;
+    color: #969696
+}
+
+.note .post .comment-list .meta span {
+    margin-right: 6px
+}
+
+.note .post .comment-list .tool-group a {
+    margin-right: 10px;
+    font-size: 0;
+    color: #969696;
+    display: inline-block
+}
+
+.note .post .comment-list .tool-group a:hover {
+    color: #333
+}
+
+.note .post .comment-list .tool-group a:hover .ic-zan {
+    color: #ea6f5a
+}
+
+.note .post .comment-list .tool-group a i {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle
+}
+
+.note .post .comment-list .tool-group a span {
+    vertical-align: middle;
+    font-size: 14px
+}
+
+.note .post .comment-list .tool-group a.active i {
+    color: #ea6f5a
+}
+
+.note .post .comment-list .tool-group a.active span {
+    color: #333
+}
+
+.note .post .comment-list .normal-comment-list {
+    margin-top: 30px
+}
+
+.note .post .comment-list .normal-comment-list .top .author-only {
+    margin-left: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #969696;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.note .post .comment-list .normal-comment-list .top .author-only.active {
+    color: #fff;
+    border: 1px solid #ea6f5a;
+    background-color: #ea6f5a
+}
+
+.note .post .comment-list .normal-comment-list .top .close-btn {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #969696
+}
+
+.note .post .comment-list .normal-comment-list .top .pull-right a {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #969696;
+    display: inline-block
+}
+
+.note .post .comment-list .normal-comment-list .top .pull-right .active, .note .post .comment-list .normal-comment-list .top .pull-right a:hover {
+    color: #2f2f2f
+}
+
+.note .post .comment-list .normal-comment-list .close-comment, .note .post .comment-list .normal-comment-list .no-author-comment, .note .post .comment-list .normal-comment-list .no-comment {
+    width: 226px;
+    height: 92px;
+    margin: 30px auto 20px;
+    background: url(//cdn2.jianshu.io/assets/web/icon_comment_no-1b12627d360515e52c3c4dfc2f6b0eb7.png) no-repeat;
+    background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .close-comment {
+    background: url(//cdn2.jianshu.io/assets/web/icon_comment_close-1977c458f0eb7900b53b422cac10c713.png) no-repeat;
+    background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .no-author-comment {
+    background: url(//cdn2.jianshu.io/assets/web/icon_comment_no_writer-511f994389aa2409f189d680b13ff5ed.png) no-repeat;
+    background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .text {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #969696
+}
+
+.note .post .comment-list .normal-comment-list .text a, .note .post .comment-list .normal-comment-list .text a:hover {
+    color: #3194d0
+}
+
+.note .post .comment-list .normal-comment-list .open-block {
+    padding: 30px 0 50px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .normal-comment-list .open-block .open-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #969696;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px
+}
+
+.note .post .comment-list .sub-comment-list {
+    margin-top: 20px;
+    padding: 5px 0 5px 20px;
+    border-left: 2px solid #d9d9d9
+}
+
+.note .post .comment-list .sub-comment-list p {
+    margin: 0 0 5px;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.note .post .comment-list .sub-comment-list a, .note .post .comment-list .sub-comment-list a:hover {
+    color: #3194d0
+}
+
+.note .post .comment-list .sub-comment-list .new-comment {
+    margin: 0
+}
+
+.note .post .comment-list .sub-comment-list .new-comment .sign-container, .note .post .comment-list .sub-comment-list .new-comment textarea {
+    width: 100%
+}
+
+.note .post .comment-list .sub-comment-list .new-comment .emoji {
+    margin: 15px 0 0
+}
+
+.note .post .comment-list .sub-comment-list .emoji-modal-wrap .emoji-modal {
+    left: -48px
+}
+
+.note .post .comment-list .sub-comment {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #f0f0f0
+}
+
+.note .post .comment-list .sub-comment:last-child {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+.note .post .comment-list .sub-comment .report, .note .post .comment-list .sub-comment .subcomment-delete {
+    float: right;
+    margin: 1px 0 0 10px;
+    display: none
+}
+
+.note .post .comment-list .sub-comment:hover .report, .note .post .comment-list .sub-comment:hover .subcomment-delete {
+    display: inherit
+}
+
+.note .post .comment-list .sub-tool-group {
+    font-size: 12px;
+    color: #969696
+}
+
+.note .post .comment-list .sub-tool-group a {
+    margin-left: 10px;
+    color: #969696
+}
+
+.note .post .comment-list .sub-tool-group a:hover {
+    color: #333
+}
+
+.note .post .comment-list .sub-tool-group a i {
+    margin-right: 5px;
+    font-size: 14px;
+    vertical-align: middle
+}
+
+.note .post .comment-list .sub-tool-group a span {
+    vertical-align: middle
+}
+
+.note .post .comment-list .more-comment {
+    font-size: 14px;
+    color: #969696;
+    border: none
+}
+
+.note .post .comment-list .add-comment-btn {
+    color: #969696 !important
+}
+
+.note .post .comment-list .add-comment-btn:hover {
+    color: #333 !important
+}
+
+.note .post .comment-list .add-comment-btn i {
+    margin-right: 5px
+}
+
+.note .post .comment-list .line-warp {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #d9d9d9
+}
